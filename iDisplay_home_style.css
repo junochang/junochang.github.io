@@ -1,0 +1,199 @@
+
+body {
+	font-size: 12pt;
+	line-height: 1.75em;
+	font-family: sans-serif,serif;
+	background: rgb(166,166,166);
+	margin: 0 0 0 19;
+}
+
+/* a:link { 
+color:#FF0000; 
+text-decoration:none; 
+} 
+a:visited { 
+color:#2adb46; 
+text-decoration:none; 
+} 
+a:hover { 
+
+text-decoration:none; 
+} 
+a:active { 
+color:#FF3333; 
+text-decoration:none; 
+} 
+ */
+
+
+#banner {
+	position: relative;
+}
+
+#copyright {
+	text-align: center;
+	color: #DCDCDC;
+	padding: 32px 0 0 0;
+}
+
+#copyright a {
+	color: #FFFFFF;
+}
+
+
+#footer ul {
+	list-style: none;
+}
+
+#header {
+	position: relative;
+	
+	height: 220px;
+	width: 1000px;
+	background-image: url(navigate-head.jpg);
+	
+}
+
+#logo {
+	position: absolute;
+	top: 25;
+	left: 50px;
+	height: 150px;
+	line-height: 150px;
+}
+
+#logo a {
+	text-decoration: none;
+	
+}
+
+#logo h1 {
+	font-size: 2.75em;
+	font-family: Bitter, serif;
+}
+
+#nav {
+	position: absolute;
+	bottom: 0;
+	left: -25;
+	height: 70px;
+	line-height: px;
+	padding: 0 24px 0 24px;
+	width: 1000px;
+	margin: 0 0 0 0;
+	
+}
+
+#nav a {
+	text-decoration: none;
+	
+	color: #888888;
+}
+
+#nav li {
+	margin: 0 1em 0 0;
+	padding: 0 1em 0 1em;
+}
+#nav li a:hover {
+    color:#FF3333;
+}
+
+#nav li.active {
+color: #FF3333;
+}
+
+.nav-tabs > li > a:hover{
+  ;
+    color:#FF3333;
+}
+
+#nav li.active a {
+	
+}
+
+#nav ul {
+	list-style: none;
+}
+
+#nav ul li {
+	float: left;
+}
+
+#outer {
+	position: relative;
+	width: 1000px;
+    padding: 0 24 0 24px;
+	margin: 0 auto 0 auto;
+	
+}
+
+#search {
+	position: absolute;
+	top: 0;
+	right:30px;
+    
+	height: 100px;
+	line-height: 360px;
+}
+
+#search input.button {
+		margin-left: 1em;
+	border: 0;
+	color: #fff;
+	background: #FF3333;
+	padding: 4px;
+	
+	font-family: sans-serif,serif;
+}
+
+#search input.text {
+	border: solid 1px #5d7872;
+	padding: 2px;
+}
+
+
+#copyright_panel {
+background-color: rgb(19, 38, 71);
+    position: relative;
+	width: 1000px;
+    height: 90px;
+	margin: 60 auto 0 auto;
+}
+
+p {
+    margin: 30;
+    text-align: center
+}
+
+#gallery_image_title {
+    text-align: center;
+    font-size: 25px;
+}
+
+#image_web {
+    text-decoration: none
+
+}
+#image_web:link{
+    
+color:#ff0000; 
+text-decoration:none; 
+
+}
+#image_web:visited{
+    color: #FF3333;
+}
+#image_web:hover{
+    color:darkred
+}
+#gallery_imgage_content {
+    text-align: center;
+    font-size: 15px;
+}
+
+#product_image {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+

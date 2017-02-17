@@ -1,0 +1,206 @@
+<html>
+
+<head>
+   <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>iDIsplay</title>
+
+    <link rel="stylesheet" href="flexslider.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="jquery.flexslider-min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="iDisplay_icon.png" />
+
+<!-- 回到頂端按鈕 start -->
+<script>
+//<![CDATA[
+(function () {
+$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
+var img = "http://1.bp.blogspot.com/-zMfrIkyhlVs/Uh7FePoKU8I/AAAAAAAAHnA/WA0H_vbWAWc/s1600/go-top.png",
+locatioin = 1/2, // 按鈕出現在螢幕的高度
+right = 10, // 距離右邊 px 值
+opacity = 0.3, // 透明度
+speed = 500, // 捲動速度
+$button = $("#goTopButton"),
+$body = $(document),
+$win = $(window);
+$button.attr("src", img);
+$button.on({
+mouseover: function() {$button.css("opacity", 1);},
+mouseout: function() {$button.css("opacity", opacity);},
+click: function() {$("html, body").animate({scrollTop: 0}, speed);}
+});
+window.goTopMove = function () {
+var scrollH = $body.scrollTop(),
+winH = $win.height(),
+css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
+if(scrollH > 20) {
+$button.css(css);
+$button.fadeIn("slow");
+} else {
+$button.fadeOut("slow");
+}
+};
+$win.on({
+scroll: function() {goTopMove();},
+resize: function() {goTopMove();}
+});
+} )();
+//]]>
+</script>
+<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide", //圖片變換方式
+                animationLoop: true,
+                slideshowSpeed:7000,
+                itemWidth: 250,
+                prevText: "", //String: 上一項的文字
+                nextText: "",
+                maxItems: 4
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="iDisplay_home_style.css" />
+</head>
+
+<body>
+    <div id="bg">
+        <div id="outer">
+            <div id="header">
+                <div id="logo">
+                    <h1>
+							<a href="#"><img src="iDisplay_logo.png" alt=""></a>
+						</h1>
+                </div>
+                <div id="search">
+                    <form action="" method="post">
+                        <input class="text" name="search" size="20" maxlength="64" />
+                        <input class="button" type="submit" value="Search" />
+                    </form>
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li>
+                            <a href="iDisplay_home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="iDIsplay_about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Application</a>
+                        </li>
+                        <li>
+                            <a href="#">ODM&amp;OEM</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+
+                    </ul>
+                    <br class="clear" />
+                </div>
+            </div>
+            <div id="banner">
+                <img src="web_home_product_view.jpg" width="1000" height="540" alt="" />
+            </div>
+
+        </div>
+        <div id="gallery_panel">
+
+            <div class="flexslider">
+
+                <ul class="slides">
+                    <li>
+                       
+                        <a href="http://google.com.tw"> <img id=product_image src="IMAG1016_01-150x150.jpg"/></a>
+
+                        <div id="gallery_image_title"><a id="image_web" href="http://google.com.tw">iF43BN-1501-Ox</a></div>
+
+                        <div id="gallery_imgage_content"><span>480*272 VGA resolution,4.3* <br>LCD-TFT dispaly</span></div>
+
+                    </li>
+
+                    <li>
+                        <a href="http://google.com.tw"> <img id=product_image src="IMAG0761_01-150x150.jpg" /></a>
+
+                        <div id="gallery_image_title"><a id="image_web" href="http://google.com.tw">iF43BN-1501-Ox</a></div>
+
+                        <div id="gallery_imgage_content"><span>480*272 VGA resolution,4.3* <br>LCD-TFT dispaly</span></div>
+
+                    </li>
+                    <li>
+                        <a href="http://google.com.tw"> <img id=product_image src="WEB_182x176-150x150.jpg" /></a>
+
+                        <div id="gallery_image_title"><a id="image_web" href="http://google.com.tw">iF43BN-1501-Ox</a></div>
+
+                        <div id="gallery_imgage_content"><span>480*272 VGA resolution,4.3* <br>LCD-TFT dispaly</span></div>
+
+                    </li>
+                    <li>
+                        <a href="http://google.com.tw"> <img id=product_image src="3011-150x150.jpg" /></a>
+
+                        <div id="gallery_image_title"><a id="image_web" href="http://google.com.tw">iF43BN-1501-Ox</a></div>
+
+                        <div id="gallery_imgage_content"><span>480*272 VGA resolution,4.3* <br>LCD-TFT dispaly</span></div>
+
+                    </li>
+                    <li>
+                        <a href="http://google.com.tw"> <img id=product_image src="3011-150x150.jpg" /></a>
+
+                        <div id="gallery_image_title"><a id="image_web" href="http://google.com.tw">iF43BN-1501-Ox</a></div>
+
+                        <div id="gallery_imgage_content"><span>480*272 VGA resolution,4.3* <br>LCD-TFT dispaly</span></div>
+
+                    </li>
+                    <li>
+                        <a href="http://google.com.tw"> <img id=product_image src="3011-150x150.jpg" /></a>
+
+                        <div id="gallery_image_title"><a id="image_web" href="http://google.com.tw">iF43BN-1501-Ox</a></div>
+
+                        <div id="gallery_imgage_content"><span>480*272 VGA resolution,4.3* <br>LCD-TFT dispaly</span></div>
+
+                    </li>
+                    <li>
+                        <a href="http://google.com.tw"> <img id=product_image src="3011-150x150.jpg" /></a>
+
+                        <div id="gallery_image_title"><a id="image_web" href="http://google.com.tw">iF43BN-1501-Ox</a></div>
+
+                        <div id="gallery_imgage_content"><span>480*272 VGA resolution,4.3* <br>LCD-TFT dispaly</span></div>
+
+                    </li>
+                    <li>
+                        <a href="http://google.com.tw"> <img id=product_image src="3011-150x150.jpg" /></a>
+
+                        <div id="gallery_image_title"><a id="image_web" href="http://google.com.tw">iF43BN-1501-Ox</a></div>
+
+                        <div id="gallery_imgage_content"><span>480*272 VGA resolution,4.3* <br>LCD-TFT dispaly</span></div>
+
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div id="copyright_panel">
+
+            <div id="copyright">
+                   2017&copy; iDisplay. All rights reserved. All trade and/or services marks mentioned are the property of their respective owners.
+                <a href="http://templated.co" rel="nofollow"></a>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
